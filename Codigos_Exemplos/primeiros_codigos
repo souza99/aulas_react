@@ -35,7 +35,7 @@
 //   }
 
 //   // Usando arrow function, não precisamos de bind,
-//   // Errow function nãso tem "this"
+//   // Errow function não tem "this"
 //   // Ela busca no elemento pai e encontra nosso this.state;
 //   handleAClick = (event) => {
 
