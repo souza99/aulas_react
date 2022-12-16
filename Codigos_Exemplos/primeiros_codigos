@@ -74,3 +74,34 @@
 // }
 
 // export default App;
+
+
+
+
+
+
+
+
+
+
+
+
+//   // Executa quando termina de montar o component "Render()"
+//   // Esse metodo é um life cicle
+//   componentDidMount() {
+//     this.handleTimeout();
+//   }
+
+//   // É um componente que Serve para atualizar a pagina
+//   // Esse metodo é um life cicle
+//   componentDidUpdate() {
+//     this.handleTimeout();
+//   }
+
+//   // É um componente que toda vez que o component for ser desmontado, ele é chamado para desmontar,
+//   // Quando acontece alguma alteração no componente, ele é chamado para desmontar "a tela por
+//   // exemplo"
+//   componentWillUnmount() {
+//     // usando "clearTimeout" para limpar a sugeira de dados que fica na telas
+//     clearTimeout(this.timeoutUpdate);
+//   }
