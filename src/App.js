@@ -14,7 +14,7 @@ class App extends Component {
   loadPosts = async () => {
     const postsResponse = fetch('https://jsonplaceholder.typicode.com/posts');
 
-    const [posts] = await Promise.all([ postsResponse ]);
+    const [posts] = await Promise.all([postsResponse]);
 
     const postJson = await posts.json();
 
@@ -25,15 +25,20 @@ class App extends Component {
     const { posts } = this.state;
 
     return (
-      <div className="posts">
-        {posts.map(post => (
-          <div key={post.id} className="post-content">
-            <h1>{post.title}</h1>
-            <p>{post.body}</p>
-          </div>
-        ))}
-      </div>
+      <section className='container'>
+        <div className="posts">
+          {posts.map(post => (
+            <div key={post.id} className='post'>
+              <div className="post-content">
+                <h1>{post.title}</h1>
+                <p>{post.body}</p>
+              </div>
+            </div>
+          ))}
+        </div>
+      </section>
     );
+
   }
 }
 
